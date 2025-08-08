@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixel Editor</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="toolbar">
+            <div class="input-group">
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker">
+            </div>
+            <div class="input-group">
+                <label for="widthInput">Width:</label>
+                <input type="number" id="widthInput" placeholder="Width" value="16" min="1" max="64">
+            </div>
+            <div class="input-group">
+                <label for="heightInput">Height:</label>
+                <input type="number" id="heightInput" placeholder="Height" value="16" min="1" max="64">
+            </div>
+            <button type="button" id="resizeBtn">Resize</button>
+            <button type="button" id="saveAsPNG">Save as PNG</button>
+        </div>
+        <div id="presetColorsContainer">
+            <div class="preset-color" data-color="#000000"></div>
+            <div class="preset-color" data-color="#FFFFFF"></div>
+            <div class="preset-color" data-color="#DC143C"></div>
+            <div class="preset-color" data-color="#FF7F50"></div>
+            <div class="preset-color" data-color="#FFC512"></div>
+            <div class="preset-color" data-color="#008080"></div>
+            <div class="preset-color" data-color="#32CD32"></div>
+            <div class="preset-color" data-color="#87CEEB"></div>
+            <div class="preset-color" data-color="#7851A9"></div>
+            <div class="preset-color" data-color="#708090"></div>
+        </div>
+        <div id="canvas"></div>
+    </body>
+</html>
